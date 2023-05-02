@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class MyF {
+
+	public static void main(String[] args) {
+		// 
+		Scanner scanner = new Scanner(System.in);
+		
+		int dan;
+		while (true) {
+			System.out.print("출력할 단 수를 입력하세요 (1~9): ");
+			dan = scanner.nextInt();
+			if (dan >=1 && dan <= 999) {
+				break;
+			}
+			System.out.println("잘못된 입력입니다. 다시 입력해주세요");
+		}
+
+
+			
+		
+		for (int i = 1; i <=dan; i++)
+		for (int j=1;j<=9;j++) {
+			System.out.println(i+"x"+j+"="+(i*j));
+		}
+
+		// 1단부터 9단까지 출력한다.
+		// optinal: 유저에게 단 수를 입력받는다.
+		//			이 경우 1~999까지의 입력만 유효하게 예외처리한다.
+		// optional: 비즈니스 로직 분리 해보세요. View 단과 비즈니스 로직 클래스를 따로 생성해서 코드를 메인에서 분리해보세요
+		
+
+	}
+
+}
